@@ -1,0 +1,732 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Myriad Pro, sans-serif 
+}
+
+h2{
+	font-size: 36px;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+li{
+	list-style: none;
+}
+
+input{
+	display: none;
+}
+
+.clearfix:after{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.header{
+	height: 81px;
+	line-height: 81px;
+	background-color: #1d2126;
+}
+
+.container{
+	margin: 0 auto;
+	height: 660px;
+	max-width: 1140px;
+}
+
+.header ul{
+	float: right;
+}
+
+.header ul li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.header ul li a{
+	color: #A4A7A5;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 9px 12px;
+	border:2px solid transparent; 
+	transition: 0.3s;
+}
+
+.header ul li a:hover{
+	border: 2px solid #5b6168;
+}
+
+ .header .container ul li a.active{
+	border-color: #23b7a4;
+    color: #23b7a4;
+} 
+
+/*banner*/
+.banner{
+	height: 660px;
+	background-image: url(images/banner/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner .container{
+	position: relative;
+}
+
+.content {
+	max-width: 580px;
+	padding-top: 220px;
+}
+
+.banner .container h2{
+	line-height: 42px;
+	color: white;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 100;
+}
+
+.banner .container p{
+	font-size: 16px;
+	color: white;
+	line-height: 26px;
+	margin-top: 26px;
+}
+
+.banner .container .content ul li{
+	display: inline-block;
+	height: 44px;
+	margin-right: 10px;
+	margin-top: 36px;
+	line-height: 44px;
+	
+}
+
+.banner .container .content ul li a{
+	border: 2px solid white;
+	color: white;
+	padding: 17px 35px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+.banner .container .content ul li a:hover{
+	background-color: #23b7a4;
+	border: 2px solid #23b7a4;
+}
+
+#banner-circle{
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+}
+
+#banner-circle span{
+	display: inline-block;
+    height: 13px;
+    width: 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+#banner-circle input[type="radio"]:checked +label span{
+	background-color: white;
+}
+
+/*About*/
+
+.title h2{
+	font-size: 36px;
+	height: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-indent: 24px;
+    border-left: 10px solid #a0a1a2;
+	color: #292f36;
+	font-weight: 100;
+}
+
+.about{
+	padding-top: 80px;
+	height: 610px;
+	border-bottom: 2px solid #dde1e4;
+}
+
+.about .container .col-1{
+	width: 50%;
+	float: left;
+}
+
+.about .container .col-2{
+	width: 50%;
+	float: right;
+}
+
+.about .container .col-1,
+.about .container .col-2{
+	padding-top: 60px;
+}
+
+.about .container p{
+	color: #8d8f92;
+	font-size: 16px;
+	line-height: 26px;
+}
+}
+
+.about .container .col-1 p:last-child{
+	padding-top: 34px;
+}
+
+.about .container .col-1 span{
+	font-weight: bold;
+}
+
+.socialicons li{
+	display: inline-block;
+	padding-top: 50px;
+}
+
+.socialicons li a{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #c8cdd0;
+	text-indent: -1000px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: 0.3s;
+}
+
+.socialicons li:nth-child(1) a{
+	background-image: url(images/Icon/facebook.png);
+}
+
+.socialicons li:nth-child(2) a{
+	background-image: url(images/Icon/t.png);
+}
+
+.socialicons li:nth-child(3) a{
+	background-image: url(images/Icon/google.png);
+}
+
+.socialicons li:nth-child(4) a{
+	background-image: url(images/Icon/D.png);
+}
+
+.socialicons li:nth-child(5) a{
+	background-image: url(images/Icon/be.png);
+}
+
+.socialicons li a:hover{
+	background-color: #d0d5d9;
+}
+
+.about .col-2{
+	counter-reset: about;
+}
+
+.about .col-2 li{
+	position: relative;
+	padding-left: 67px;
+	padding-bottom: 30px;
+}
+
+.about .col-2 li h3{
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 100;
+}
+
+.about .col-2 li:before{
+	counter-increment: about;
+	content: counters(about, ".", decimal-leading-zero);
+	position: absolute;
+	background-color: #23b7a4;
+	color: white;
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	line-height: 53px;
+	text-align: center;
+	left: 0px;
+	top: 0px;
+}
+
+/*Our Team*/
+
+.team{
+	padding-top: 80px;
+	height: 650px;
+	border-bottom: 2px solid #dde1e4;
+}
+
+.team .team-list{
+	padding-top: 60px;
+}
+
+.team .team-list>div{
+	position: relative;
+	width: 263px;
+	height: 375px;
+	float: left;
+	margin-right: 22px;
+}
+
+.team .team-list>div>div{
+	position: relative;
+	height: 300px;
+	width: 263px;
+}
+
+.team .team-list div div.info{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 263px;
+	height: 75px;
+    padding: 15px 0 15px 20px;
+    background-color: #e1e6ea;
+}
+
+.team .team-list div div.info p{
+	color: #8d8f92;
+}
+
+.team .team-list div .mask{
+	height: 50px;
+	width: 153px;
+	display: none;
+	position: absolute;
+	top: 125px;
+	left: 55px;
+}
+
+.mask ul li {
+	float: left;
+	background-color: #3a454d;
+	margin-right: 1px;
+}
+
+.mask ul li a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-indent: -10000px;
+	transition: 0.3;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.mask ul:nth-child(1) li a{
+	background-image: url(images/Icon/t.png);
+}
+
+.mask ul:nth-child(2) li a{
+	background-image: url(images/Icon/facebook.png);
+}
+
+.mask ul:nth-child(3) li a{
+	background-image: url(images/Icon/I.png);
+}
+
+.team .team-list div:hover div{
+	opacity: 0.4;
+}
+
+.team .team-list div:hover div.info{
+	background-color: #3a454d;
+	opacity: 1;
+	color: white;
+}
+
+.team .team-list div div.mask ul li:hover {
+	background-color: #4e5a62;
+}
+
+.team .team-list div:hover div.mask{
+	display: block;
+	opacity: 1;
+}
+
+/*Lovely Work*/
+
+.work{
+	background-color: #3a454d;
+	height: 850px;
+}
+
+.work .container{
+	padding-top: 80px;
+}
+
+.work .title h2{
+	color: white;
+}
+
+.work .container .work-action{
+	padding-top: 60px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	
+}
+
+.work .container .work-action>div{
+	height: 265px;
+	margin-bottom: 30px;
+	position: relative;
+	cursor: pointer;
+	background-image: url(images/Icon/plus.png);
+	background-repeat: no-repeat;
+	background-position: center 90px;
+}
+
+.work .container .work-action div div.mask{
+	display: none;
+	position: absolute;
+    width: 360px;
+    height: 265px;
+    top: 0px;
+    left: 0px;
+
+}
+
+.work .container .work-action div div.mask h4{
+	width: 360px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #292f36;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.work .container .work-action div img{
+	height: 265px;
+	width: 360px;
+}
+
+.work .container .work-action div:hover div.mask{
+	display: inline-block;
+	
+}
+
+.work .container .work-action div:hover img{
+	background-color: black;
+	opacity: 0.5;
+}
+
+
+.work .container .btn{
+	display: flex;
+	justify-content: center;
+}
+
+.work .container .btn button{
+    width: 151px;
+    height: 44px;
+    border-radius: 3px;
+    border: 2px solid white;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+	line-height: 28px;
+	cursor: pointer;
+}
+
+/*Service*/
+
+.service{
+	height: 900px;
+	border-bottom: 2px solid #dde1e4;
+}
+
+.service .container{
+	padding-top: 80px;
+}
+
+.service .container .title{
+	padding-bottom: 90px;
+}
+
+.service .container ul{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.service .container ul li{
+	width: 246px;
+    height: 240px;
+    margin-right: 38px;
+	text-align: center;
+	margin-bottom: 50px;
+	
+}
+
+.service .container ul li:nth-child(1),
+.service .container ul li:nth-child(5){
+	background-image: url(images/services/pencil.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+}
+ 
+.service .container ul li:nth-child(2),
+.service .container ul li:nth-child(6){
+	background-image: url(images/services/mobile.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.service .container ul li:nth-child(3),
+.service .container ul li:nth-child(7){
+	background-image: url(images/services/cogs.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+}
+
+.service .container ul li:nth-child(4),
+.service .container ul li:nth-child(8){
+	background-image: url(images/services/clock.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	
+}
+
+.service .container ul li h4
+{
+	padding-top: 78px;	
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 100;
+}
+
+.service .container ul li p{
+	font-size: 16px;
+	color: #b2b2b3;
+	padding-top: 30px;
+	line-height: 26px;
+}
+
+
+/*Feature*/
+
+.feature{
+	padding-top: 80px;
+	background-color: #3a454d;
+}
+
+.feature .container .title h2{
+	color: white;
+}
+
+.feature .container .feature-ct{
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature .container .feature-ct div{
+	width: 360px;
+	height: 240px;
+	color: white;
+}
+
+.feature .container .feature-ct div h4{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-top: 50px;
+	letter-spacing: 0.5px;
+	font-weight: 100;
+}
+
+.feature .container .feature-ct div p{
+	color: #babec1;
+	font-size: 16px;
+	padding-top: 25px;
+	letter-spacing: 0.5px;
+	line-height: 26px;
+	font-weight: lighter;
+}
+
+/*Contact*/
+
+.contact .title{
+	margin: 0 auto;
+	max-width: 1140px;
+	padding-top: 70px;
+	padding-bottom: 60px;
+}
+
+.contact .container{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 300px;
+}
+
+.contact .container>div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 550px;
+	padding: 30px 0px;
+}
+
+.contact .container form {
+	position: absolute;
+	display: inline-block;
+	right: 0px;
+	top: -130px;
+	background-color: white;
+	width: 555px;
+    height: 400px;
+    padding: 0px 30px;
+}
+
+.contact .container form .info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact .container form .info input{
+	display: block;
+    width: 240px;
+    height: 44px;
+    background-color: #eaeef1;
+    border-radius: 3px;
+    border: none;
+    padding: 0px 10px;
+}
+
+.contact .container form  label{
+	display: block;
+    color: #8d8f92;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+}
+
+.contact .container form textarea{
+	width: 491px;
+    height: 159px;
+    background-color: #eaeef1;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.contact .container form button{
+	display: inline-block;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    background-color: #23b7a4;
+    color: white;
+    border-radius: 3px;
+    border: none;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.contact .container 
+
+.contact .container h3{
+	text-transform: uppercase;
+    font-size: 20px;
+    color: #292f36;
+    font-weight: 100;
+    margin-left: 10px
+}
+
+.contact .container p{
+	font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    margin-top: 20px;
+}
+
+.contact .container span{
+	font-weight: bold;
+}
+
+/*Footer*/
+
+.footer{
+	background-color: #3a454d;
+}
+
+.footer .container{
+	height: 75px;
+	line-height: 75px;
+}
+
+.footer .container p{
+	float: left;
+	color: white;
+	font-size: 14px;
+}
+
+.footer .container ul{
+	float: right;
+}
+
+.footer .container ul li{
+	display: block;
+	float: left;
+}
+
+.footer .container ul li a{
+	display: inline-block;
+	color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.footer .container ul li:nth-child(1) a{
+	background-image: url(images/Icon/t.png);
+}
+
+.footer .container ul li:nth-child(2) a{
+	background-image: url(images/Icon/facebook.png);
+}
+
+.footer .container ul li:nth-child(3) a{
+	background-image: url(images/Icon/skype.png);
+}
+
+.footer .container ul li:nth-child(4) a{
+	background-image: url(images/Icon/be.png);
+}
+
+.footer .container ul li:nth-child(5) a{
+	background-image: url(images/Icon/I.png);
+}
