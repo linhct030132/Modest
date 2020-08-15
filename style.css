@@ -80,6 +80,7 @@ input{
 	background-image: url(images/banner/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #34344c;
 }
 
 .banner .container{
@@ -612,6 +613,7 @@ input{
 .contact .container form .info{
 	display: flex;
 	justify-content: space-between;
+	padding-top: 10px;
 }
 
 .contact .container form .info input{
